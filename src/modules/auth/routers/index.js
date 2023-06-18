@@ -8,8 +8,8 @@ router.get('/ping', (_req, res) => {
   return res.success()
 })
 
-router.post('/signup', authController.Signup.bind())
+router.post('/register', authController.Signup.bind())
 
-router.post('/signin', authController.SignIn.bind())
+router.post('/login', authController.SignIn.bind())
 
 export const authRouter = router
