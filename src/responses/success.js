@@ -3,7 +3,6 @@ export default function (data = {}) {
   const {
     message = 'Success.',
     token,
-    item = null,
     items = null,
 
     // Pagination Related Fields
@@ -23,7 +22,7 @@ export default function (data = {}) {
       startIndex,
       itemsPerPage,
 
-      items: items ? items : item ? [item] : undefined,
+      items: items ? items : undefined,
     },
   }
 

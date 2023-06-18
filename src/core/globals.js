@@ -6,6 +6,7 @@ import { Messages } from './constants/response.messages.js'
 
 // Database Models
 import { UserModel } from '../model/user.js'
+import { PostModel } from '../model/post.js'
 
 // Export Global Variables
 export const Global = global
@@ -15,6 +16,7 @@ Global.App = {
   Messages,
   Models: {
     User: UserModel,
+    Post: PostModel,
   },
   Utils: { isEmail },
 }

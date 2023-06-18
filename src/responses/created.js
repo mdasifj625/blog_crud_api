@@ -6,7 +6,6 @@ export default function (data = {}) {
     data: {
       message,
       statusCode,
-      token,
       items: items ? items : item ? [item] : undefined,
     },
   }
