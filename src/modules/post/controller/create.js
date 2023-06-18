@@ -14,7 +14,7 @@ export default async function _CreatePost(req, res) {
     const post = new App.Models.Post({
       title,
       description,
-      createdBy: '648f1f08fc3cb7b8f9aa6a3d',
+      createdBy: req.user._id,
     })
 
     await post.save()
