@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "rules": {
+    "no-console": 2,
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "semi": [2, "never"],
+    "quotes": [2, "single", "avoid-escape"],
+    "prettier/prettier": "error",
+    "eqeqeq": 0
+  }
+}
