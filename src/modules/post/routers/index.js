@@ -14,7 +14,7 @@ router.get('/', postController.GetPosts.bind())
 
 router.get('/:id', postController.GetPost.bind())
 
-// router.put('/:id', postController.UpdatePost.bind())
+router.put('/:id', authorize.bind(), postController.UpdatePost.bind())
 
 // router.delete('/:id', postController.DeletePost.bind())
 

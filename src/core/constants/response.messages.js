@@ -28,6 +28,7 @@ export const Messages = {
       Created: 'Post created successfully',
       GetAll: 'Fetched all posts',
       Get: 'Post fetched successfully',
+      Updated: 'Post updated successfully',
     },
   },
 }
