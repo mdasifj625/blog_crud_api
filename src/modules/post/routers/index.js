@@ -10,7 +10,7 @@ router.get('/ping', (_req, res) => {
 
 router.post('/', authorize.bind(), postController.CreatePost.bind())
 
-// router.get('/', postController.GetPosts.bind())
+router.get('/', postController.GetPosts.bind())
 
 // router.get('/:id', postController.GetPost.bind())
 
