@@ -23,4 +23,9 @@ export const Messages = {
       IncorrectPassword: 'The entered credentials are wrong, Please try again.',
     },
   },
+  Post: {
+    Success: {
+      Created: 'Post created successfully',
+    },
+  },
 }
