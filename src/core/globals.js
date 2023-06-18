@@ -1,5 +1,6 @@
 import { Config } from './config.js'
 import { Logger } from './logger.js'
+import { isEmail } from '../utils/common.js'
 
 import { Messages } from './constants/response.messages.js'
 
@@ -15,4 +16,5 @@ Global.App = {
   Models: {
     User: UserModel,
   },
+  Utils: { isEmail },
 }
