@@ -22,7 +22,7 @@ export default function (data = {}) {
       startIndex,
       itemsPerPage,
 
-      items: items ? items : item ? [item] : undefined,
+      items: items ? items : undefined,
     },
   }
 

@@ -16,6 +16,6 @@ router.get('/:id', postController.GetPost.bind())
 
 router.put('/:id', authorize.bind(), postController.UpdatePost.bind())
 
-// router.delete('/:id', postController.DeletePost.bind())
+router.delete('/:id', authorize.bind(), postController.DeletePost.bind())
 
 export const postRouter = router
