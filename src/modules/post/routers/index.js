@@ -12,7 +12,7 @@ router.post('/', authorize.bind(), postController.CreatePost.bind())
 
 router.get('/', postController.GetPosts.bind())
 
-// router.get('/:id', postController.GetPost.bind())
+router.get('/:id', postController.GetPost.bind())
 
 // router.put('/:id', postController.UpdatePost.bind())
 

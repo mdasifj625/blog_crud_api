@@ -3,7 +3,7 @@ export default async function _GetPosts(req, res) {
     // Create Post Document
     const posts = await App.Models.Post.find()
 
-    return res.created({
+    return res.success({
       message: App.Messages.Post.Success.GetAll,
       items: posts,
     })

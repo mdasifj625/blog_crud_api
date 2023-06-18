@@ -3,7 +3,6 @@ export default function (data = {}) {
   const {
     message = 'Success.',
     token,
-    item = null,
     items = null,
 
     // Pagination Related Fields
