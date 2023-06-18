@@ -1,18 +1,18 @@
-import { Router } from 'express';
-import RateLimit from 'express-rate-limit';
+import { Router } from 'express'
+import RateLimit from 'express-rate-limit'
 
-// import { authRouter } from '@modules/auth/routes'
+import { authRouter } from './modules/auth/routers/index.js'
 
 const rateLimiter = RateLimit({
-	windowMs: 60 * 1000 * 1, // Time window of 1 minute
-	max: 1000, // Max hits allowed
-	standardHeaders: false,
-	legacyHeaders: false,
-});
+  windowMs: 60 * 1000 * 1, // Time window of 1 minute
+  max: 1000, // Max hits allowed
+  standardHeaders: false,
+  legacyHeaders: false,
+})
 
-const router = Router();
-router.use(rateLimiter);
+const router = Router()
+router.use(rateLimiter)
 
-// router.use('/auth', authRouter)
+router.use('/auth', authRouter)
 
-export const AppRoutes = router;
+export const AppRoutes = router
