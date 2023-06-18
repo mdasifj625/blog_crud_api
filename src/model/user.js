@@ -35,25 +35,4 @@ schema.pre('save', async function () {
   }
 })
 
-/**
- * *************************************************
- *        S T A T I C   M E T H O D S
- * *************************************************
- */
-
-// Function to check if any document exits with the given id
-schema.static('findById', (value, projection = {}) => {
-  return App.Models.User.findOne({ _id: value }, projection)
-})
-
-// Function to check if any document exits with the given username
-schema.static('findByUsername', (username) => {
-  return App.Models.User.findOne({ username })
-})
-
-// Function to check if any document exits with the given email
-schema.static('findByEmail', (email) => {
-  return App.Models.User.findOne({ email })
-})
-
 export const UserModel = Model('User', schema)
