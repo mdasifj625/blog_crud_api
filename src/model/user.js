@@ -30,7 +30,7 @@ schema.pre('save', async function () {
   // Hash password
   const { password } = this
   if (this.isModified('password')) {
-    const hash = bcrypt.hashSync(password, App.Config.SALT_ROUNDS)
+    const hash = bcrypt.hashSync(password, parseInt(App.Config.SALT_ROUNDS))
     this.password = hash
   }
 })
